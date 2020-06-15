@@ -9,6 +9,11 @@
           <include name="searchIntendedPlaceAndVerify"/>
         </methods>
       </class> <!-- testcases.Question1 -->
+      <class name="testcases.Question2">
+        <methods>
+          <include name="searchIntendedPlaceAndVerify"/>
+        </methods>
+      </class> <!-- testcases.Question2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
