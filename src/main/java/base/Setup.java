@@ -39,9 +39,9 @@ public class Setup {
 			
 			driver.get(URL);
 			
-			driver.manage().window().fullscreen();
+			driver.manage().window().maximize();
 			
-			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			
 			driver.manage().deleteAllCookies();
 		}

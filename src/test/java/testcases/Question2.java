@@ -16,9 +16,10 @@ import pages.QAagility;
 public class Question2 extends Setup {
 
 	@BeforeGroups("solution2")
-	public void beforeGroup2() {
+	public void beforeGroup2() throws InterruptedException {
 		System.out.println("In before test");
 		webSetup("https://www.qaagility.com");
+		Thread.sleep(5000);
 	}
 
 	@Test(priority = 2, groups = "solution2")

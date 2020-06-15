@@ -35,11 +35,11 @@ public class ATA extends Setup {
 	}
 	
 	private WebElement firstNumber() {
-		return driver.findElement(By.id("nameFieldContainer1"));
+		return driver.findElement(By.xpath("//table//*[@id='nameFieldContainer1']"));
 	}
 
 	private WebElement secondNumber() {
-		return driver.findElement(By.id("nameFieldContainer2"));
+		return driver.findElement(By.xpath("//table//*[@id='nameFieldContainer2']"));
 	}
 	
 	private WebElement calculateButton() {
@@ -47,6 +47,6 @@ public class ATA extends Setup {
 	}
 	
 	private WebElement resultContainer() {
-		return driver.findElement(By.id("nameFieldContainer3"));
+		return driver.findElement(By.xpath("//table//*[@id='nameFieldContainer3']"));
 	}
 }

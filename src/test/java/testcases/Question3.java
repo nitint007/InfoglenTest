@@ -18,9 +18,10 @@ import pages.ATA;
 public class Question3 extends Setup{
 	
 	@BeforeGroups("solution3")
-	public void beforeGroup3() {
+	public void beforeGroup3() throws InterruptedException {
 		System.out.println("In before test3");
 		webSetup("http://ata123456789123456789.appspot.com/");
+		Thread.sleep(5000);
 	}
 
 	@Test(priority = 3, groups = "solution3")
