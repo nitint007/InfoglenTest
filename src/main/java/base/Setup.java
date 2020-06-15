@@ -29,9 +29,9 @@ public class Setup {
 			
 			driver = new ChromeDriver();
 			
-			driver.manage().window().fullscreen();
-			
 			driver.get(URL);
+			
+			driver.manage().window().fullscreen();
 			
 			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 			
