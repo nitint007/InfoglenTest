@@ -4,8 +4,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeGroups;
-import org.testng.annotations.Test;
-
 import base.Setup;
 import pages.Gmaps;
 
@@ -34,6 +32,6 @@ public class Question1 extends Setup{
 	@AfterGroups("solution1")
 	  public void tearDown() {
 			System.out.println("In After group");
-			driver.quit();
+			driver.close();
 	}
 }

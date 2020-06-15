@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
  * @author nitinthite
@@ -24,10 +25,17 @@ public class Setup {
 		
 		if (driver == null) {
 			
-			// please uncomment the line below if you are running the suite on Windows OS
-//			System.setProperty("Webdriver.driver.chromeDriver", "./src/test/resources/drivers/chromedriver.exe");
+			if (URL.contains("https://www.google.com/maps/")) {
+				// please uncomment the line below if you are running the suite on Windows OS
+//				System.setProperty("Webdriver.driver.chromeDriver", "./src/test/resources/drivers/chromedriver.exe");
+				
+				driver = new ChromeDriver();
+			}
+			else {
+				
+				driver = new FirefoxDriver();
+			}
 			
-			driver = new ChromeDriver();
 			
 			driver.get(URL);
 			

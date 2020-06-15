@@ -6,10 +6,7 @@ package testcases;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeGroups;
-import org.testng.annotations.Test;
-
 import base.Setup;
-import pages.Gmaps;
 import pages.QAagility;
 
 /**
@@ -25,7 +22,7 @@ public class Question2 extends Setup {
 	}
 
 	@Test(priority = 2, groups = "solution2")
-	public void searchIntendedPlaceAndVerify() {
+	public void verifyTitleAndPrintLogoSize() {
 		System.out.println("In test");
 
 		QAagility qaa = new QAagility();
@@ -38,7 +35,7 @@ public class Question2 extends Setup {
 	@AfterGroups("solution2")
 	public void tearDown2() {
 		System.out.println("In After group");
-		driver.quit();
+		driver.close();
 	}
 
 }

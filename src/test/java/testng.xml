@@ -2,8 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Suite" parallel="false">
   <test name="Test">
-    <classes>
+    <classes><!-- 
       <class name="testcases.Question1"/>
+      <class name="testcases.Question2"/> -->
+      <class name="testcases.Question3"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
