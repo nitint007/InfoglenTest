@@ -27,7 +27,7 @@ public class Setup {
 			
 			if (URL.contains("https://www.google.com/maps/")) {
 				// please uncomment the line below if you are running the suite on Windows OS
-//				System.setProperty("Webdriver.driver.chromeDriver", "./src/test/resources/drivers/chromedriver.exe");
+//				System.setProperty("Webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver.exe");
 				
 				driver = new ChromeDriver();
 			}
