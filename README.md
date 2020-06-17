@@ -1,9 +1,14 @@
 # InfoglenTest
 Assignment project for infoglen
+
 -<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>-
+
 # Project environment
+
 Selenium Webdriver, Maven, TestNG
+
 -<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>-
+
 # For execution (Post cloning the project from GIT)
 1. Import it as a maven project
 2. Do clean install
@@ -14,5 +19,6 @@ Selenium Webdriver, Maven, TestNG
 6. Right click and run it as 'TestNG suite'
 
 # To run the single testNG case
-Please comment the not needed classes from tesNG.xml, save and run testng.xml as TestNG suite.
+Please comment on the 'not needed classes' from tesNG.xml, save, and run testng.xml as TestNG suite.
+
 -<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>-
