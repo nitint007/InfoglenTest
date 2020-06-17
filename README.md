@@ -1,5 +1,5 @@
 # InfoglenTest
-Assignment project for infoglen
+Assignment project for infoglen (Duration: 1.30 mins)
 
 -<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>-
 
