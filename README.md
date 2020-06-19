@@ -1,5 +1,6 @@
 # InfoglenTest
-Assignment project for infoglen (Duration: 1.30 mins)
+
+Assignment project of web automation for infoglen (Duration: 1.30 mins)
 
 -<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>-
 
@@ -10,6 +11,7 @@ Selenium Webdriver, Maven, TestNG
 -<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>-
 
 # For execution (Post cloning the project from GIT)
+
 1. Import it as a maven project
 2. Do clean install
 3. Please go to '/InfoglenTest/src/main/java/base/Setup.java'
@@ -18,7 +20,10 @@ Selenium Webdriver, Maven, TestNG
 5. Go to '/InfoglenTest/testng.xml'
 6. Right click and run it as 'TestNG suite'
 
+-<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>-
+
 # To run the single testNG case
+
 Please comment on the 'not needed classes' from tesNG.xml, save, and run testng.xml as TestNG suite.
 
 -<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>-
