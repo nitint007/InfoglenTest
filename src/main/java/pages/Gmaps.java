@@ -6,9 +6,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-
-import org.testng.*;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import base.Setup;
 
 /**
@@ -35,8 +33,6 @@ public class Gmaps extends Setup {
 	}
 
 	public void verifyText() {
-		
-		driver.switchTo().frame(resultFrame());
 
 		String res = pageResult().getText();
 
@@ -60,23 +56,21 @@ public class Gmaps extends Setup {
 	// Elements from the page used in the methods above.
 
 	private WebElement searchBar() {
-		return driver.findElement(By.xpath("//input[@id='searchboxinput']"));
+		return wait.until(
+				ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//input[@id='searchboxinput']"))));
 	}
 
 	private WebElement pageResult() {
-		return driver.findElement(By.xpath("//*[@class='section-hero-header-title-description']"));
-	}
-
-	private WebElement resultFrame() {
-		return driver.findElement(By.id("FirebugUI"));
+		return wait.until(
+				ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[@class='section-hero-header-title-description']//span"))));
 	}
 
 	private WebElement ratings() {
-		return driver.findElement(By.xpath("//*[@class='section-rating-container']"));
+		return driver.findElement(By.xpath("//span[@class='section-star-display']"));
 	}
 
 	private WebElement reviewsNumber() {
-		return driver.findElement(By.xpath("//*[@class='section-rating-container']"));
+		return driver.findElement(By.xpath("//span[@class='section-rating-term-list']"));
 	}
 
 }

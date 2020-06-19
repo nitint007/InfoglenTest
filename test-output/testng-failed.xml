@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="4" name="Test1(failed)" parallel="methods">
     <classes>
       <class name="testcases.Question3">
         <methods>
@@ -9,6 +9,11 @@
           <include name="quiteDriverSession"/>
         </methods>
       </class> <!-- testcases.Question3 -->
+      <class name="testcases.Question2">
+        <methods>
+          <include name="verifyTitleAndPrintLogoSize"/>
+        </methods>
+      </class> <!-- testcases.Question2 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

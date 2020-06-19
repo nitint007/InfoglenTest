@@ -17,14 +17,13 @@ public class Question2 extends Setup {
 
 	@BeforeGroups("solution2")
 	public void beforeGroup2() throws InterruptedException {
-		System.out.println("In before test");
+		System.out.println("In before test 2");
 		webSetup("https://www.qaagility.com");
-		Thread.sleep(5000);
 	}
 
 	@Test(priority = 2, groups = "solution2")
 	public void verifyTitleAndPrintLogoSize() {
-		System.out.println("In test");
+		System.out.println("In test 2");
 
 		QAagility qaa = new QAagility();
 
@@ -35,8 +34,7 @@ public class Question2 extends Setup {
 
 	@AfterGroups("solution2")
 	public void tearDown2() {
-		System.out.println("In After group");
+		System.out.println("In After group 2");
 		driver.close();
 	}
-
 }
