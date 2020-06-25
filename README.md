@@ -10,9 +10,11 @@ Selenium Webdriver, Maven, TestNG, Java
 
 -<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>-
 
-# Design pattern
+# Design pattern (replaced Page Object model with PageFactroy)
 
-Page object model
+Page Factory
+
+(replaced Page Object model with PageFactroy later for purpose of show case)
 
 -<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>-
 
