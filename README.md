@@ -6,7 +6,13 @@ Assignment project of web automation for infoglen (Duration: 1.30 mins)
 
 # Project environment
 
-Selenium Webdriver, Maven, TestNG
+Selenium Webdriver, Maven, TestNG, Java
+
+-<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>-
+
+# Design pattern
+
+Page object model
 
 -<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>--<*>-
 
