@@ -3,8 +3,9 @@
  */
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import base.Setup;
@@ -14,6 +15,14 @@ import base.Setup;
  *
  */
 public class QAagility extends Setup {
+	
+	@FindBy(xpath = "//nav[3]//div[1]/div[1]/a/img")
+	WebElement logoSize;
+	
+	public QAagility() {
+		
+		PageFactory.initElements(driver, this);
+	}
 
 	public void verityTitle() {
 
@@ -30,16 +39,9 @@ public class QAagility extends Setup {
 
 	public void displayLogoSize() {
 
-		int height = logoSize().getSize().getHeight();
-		int width = logoSize().getSize().getWidth();
+		int height = wait.until(ExpectedConditions.elementToBeClickable(logoSize)).getSize().getHeight();
+		int width = wait.until(ExpectedConditions.elementToBeClickable(logoSize)).getSize().getWidth();
 		System.out.println("Logo height is :" +height+ " and width is :"+width);
-	}
-
-	// Elements from the page used in the methods above.
-
-	private WebElement logoSize() {
-		return wait.until(
-				ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//nav[3]//div[1]/div[1]/a/img"))));
 	}
 
 }

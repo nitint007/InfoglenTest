@@ -3,9 +3,10 @@
  */
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import base.Setup;
 
@@ -14,11 +15,28 @@ import base.Setup;
  *
  */
 public class Gmaps extends Setup {
+	
+	@FindBy(xpath = "//input[@id='searchboxinput']")
+	WebElement searchBar;
+	
+	@FindBy(xpath = "//div[@class='section-hero-header-title-description']//span")
+	WebElement pageResult;
+	
+	@FindBy(xpath = "//span[@class='section-star-display']")
+	WebElement ratings;
+	
+	@FindBy(xpath = "//span[@class='section-rating-term-list']")
+	WebElement reviewsNumber;
+	
+	public Gmaps() {
+		
+		PageFactory.initElements(driver, this);
+	}
 
 	public void searchPlace() {
 
-		searchBar().sendKeys("Wankhede Stadium");
-		searchBar().sendKeys(Keys.ENTER);
+		wait.until(ExpectedConditions.elementToBeClickable(searchBar)).sendKeys("Wankhede Stadium");
+		wait.until(ExpectedConditions.elementToBeClickable(searchBar)).sendKeys(Keys.ENTER);
 	}
 
 	public void verityTitle() {
@@ -34,7 +52,7 @@ public class Gmaps extends Setup {
 
 	public void verifyText() {
 
-		String res = pageResult().getText();
+		String res = wait.until(ExpectedConditions.elementToBeClickable(pageResult)).getText();
 
 		if (res.contains("Stadium")) {
 			System.out.println("Test Stadium present in the title");
@@ -45,32 +63,12 @@ public class Gmaps extends Setup {
 
 	public void ratingsAndReviews() {
 
-		String ratings = ratings().getText();
+		String rating = ratings.getText();
 		System.out.print("Ratings points displayed: " + ratings);
 
-		String reviews = reviewsNumber().getText();
+		String reviews = reviewsNumber.getText();
 		System.out.print("Total number of reviews displayed: " + reviews);
 
-	}
-
-	// Elements from the page used in the methods above.
-
-	private WebElement searchBar() {
-		return wait.until(
-				ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//input[@id='searchboxinput']"))));
-	}
-
-	private WebElement pageResult() {
-		return wait.until(
-				ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[@class='section-hero-header-title-description']//span"))));
-	}
-
-	private WebElement ratings() {
-		return driver.findElement(By.xpath("//span[@class='section-star-display']"));
-	}
-
-	private WebElement reviewsNumber() {
-		return driver.findElement(By.xpath("//span[@class='section-rating-term-list']"));
 	}
 
 }
