@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="90381" started-at="2020-06-25T10:16:51Z" finished-at="2020-06-25T10:18:21Z">
+  <suite name="Suite" duration-ms="70070" started-at="2020-07-09T06:14:42Z" finished-at="2020-07-09T06:15:52Z">
     <groups>
       <group name="solution1">
         <method signature="Question1.searchIntendedPlaceAndVerify()[pri:1, instance:testcases.Question1@47c62251]" name="searchIntendedPlaceAndVerify" class="testcases.Question1"/>
@@ -14,45 +14,45 @@
         <method signature="Question3.calculator()[pri:3, instance:testcases.Question3@66a3ffec]" name="calculator" class="testcases.Question3"/>
       </group> <!-- solution3 -->
     </groups>
-    <test name="Test1" duration-ms="90381" started-at="2020-06-25T10:16:51Z" finished-at="2020-06-25T10:18:21Z">
+    <test name="Test1" duration-ms="70070" started-at="2020-07-09T06:14:42Z" finished-at="2020-07-09T06:15:52Z">
       <class name="testcases.Question3">
-        <test-method status="PASS" signature="beforeGroup3()[pri:0, instance:testcases.Question3@66a3ffec]" name="beforeGroup3" is-config="true" duration-ms="8383" started-at="2020-06-25T10:18:12Z" finished-at="2020-06-25T10:18:21Z">
+        <test-method status="PASS" signature="beforeGroup3()[pri:0, instance:testcases.Question3@66a3ffec]" name="beforeGroup3" is-config="true" duration-ms="7973" started-at="2020-07-09T06:15:43Z" finished-at="2020-07-09T06:15:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeGroup3 -->
-        <test-method status="PASS" signature="calculator()[pri:3, instance:testcases.Question3@66a3ffec]" name="calculator" duration-ms="781" started-at="2020-06-25T10:18:21Z" finished-at="2020-06-25T10:18:21Z">
+        <test-method status="PASS" signature="calculator()[pri:3, instance:testcases.Question3@66a3ffec]" name="calculator" duration-ms="811" started-at="2020-07-09T06:15:51Z" finished-at="2020-07-09T06:15:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calculator -->
-        <test-method status="PASS" signature="quiteDriverSession()[pri:0, instance:testcases.Question3@66a3ffec]" name="quiteDriverSession" is-config="true" duration-ms="3609" started-at="2020-06-25T10:18:22Z" finished-at="2020-06-25T10:18:25Z">
+        <test-method status="PASS" signature="quiteDriverSession()[pri:0, instance:testcases.Question3@66a3ffec]" name="quiteDriverSession" is-config="true" duration-ms="3601" started-at="2020-07-09T06:15:52Z" finished-at="2020-07-09T06:15:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quiteDriverSession -->
       </class> <!-- testcases.Question3 -->
       <class name="testcases.Question2">
-        <test-method status="PASS" signature="beforeGroup2()[pri:0, instance:testcases.Question2@3e6fa38a]" name="beforeGroup2" is-config="true" duration-ms="29008" started-at="2020-06-25T10:17:38Z" finished-at="2020-06-25T10:18:07Z">
+        <test-method status="PASS" signature="beforeGroup2()[pri:0, instance:testcases.Question2@3e6fa38a]" name="beforeGroup2" is-config="true" duration-ms="33670" started-at="2020-07-09T06:15:05Z" finished-at="2020-07-09T06:15:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeGroup2 -->
-        <test-method status="PASS" signature="verifyTitleAndPrintLogoSize()[pri:2, instance:testcases.Question2@3e6fa38a]" name="verifyTitleAndPrintLogoSize" duration-ms="180" started-at="2020-06-25T10:18:07Z" finished-at="2020-06-25T10:18:07Z">
+        <test-method status="PASS" signature="verifyTitleAndPrintLogoSize()[pri:2, instance:testcases.Question2@3e6fa38a]" name="verifyTitleAndPrintLogoSize" duration-ms="170" started-at="2020-07-09T06:15:39Z" finished-at="2020-07-09T06:15:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitleAndPrintLogoSize -->
-        <test-method status="PASS" signature="tearDown2()[pri:0, instance:testcases.Question2@3e6fa38a]" name="tearDown2" is-config="true" duration-ms="5533" started-at="2020-06-25T10:18:07Z" finished-at="2020-06-25T10:18:12Z">
+        <test-method status="PASS" signature="tearDown2()[pri:0, instance:testcases.Question2@3e6fa38a]" name="tearDown2" is-config="true" duration-ms="3593" started-at="2020-07-09T06:15:39Z" finished-at="2020-07-09T06:15:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown2 -->
       </class> <!-- testcases.Question2 -->
       <class name="testcases.Question1">
-        <test-method status="PASS" signature="beforeGroup()[pri:0, instance:testcases.Question1@47c62251]" name="beforeGroup" is-config="true" duration-ms="21349" started-at="2020-06-25T10:16:51Z" finished-at="2020-06-25T10:17:12Z">
+        <test-method status="PASS" signature="beforeGroup()[pri:0, instance:testcases.Question1@47c62251]" name="beforeGroup" is-config="true" duration-ms="16482" started-at="2020-07-09T06:14:42Z" finished-at="2020-07-09T06:14:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeGroup -->
-        <test-method status="PASS" signature="searchIntendedPlaceAndVerify()[pri:1, instance:testcases.Question1@47c62251]" name="searchIntendedPlaceAndVerify" duration-ms="24884" started-at="2020-06-25T10:17:12Z" finished-at="2020-06-25T10:17:37Z">
+        <test-method status="PASS" signature="searchIntendedPlaceAndVerify()[pri:1, instance:testcases.Question1@47c62251]" name="searchIntendedPlaceAndVerify" duration-ms="7157" started-at="2020-07-09T06:14:58Z" finished-at="2020-07-09T06:15:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchIntendedPlaceAndVerify -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.Question1@47c62251]" name="tearDown" is-config="true" duration-ms="199" started-at="2020-06-25T10:17:37Z" finished-at="2020-06-25T10:17:38Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.Question1@47c62251]" name="tearDown" is-config="true" duration-ms="157" started-at="2020-07-09T06:15:05Z" finished-at="2020-07-09T06:15:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
